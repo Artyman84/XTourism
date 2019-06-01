@@ -1,0 +1,1092 @@
+2018/02/02 11:09:48 [error] [php] implode(): Invalid arguments passed (Z:\home\localhost\xtourism\protected\lib\TMyScripts.php:2229)
+Stack trace:
+#0 Z:\home\localhost\framework\web\CBaseController.php(126): require()
+#1 Z:\home\localhost\framework\web\CBaseController.php(95): WelcomeController->renderInternal()
+#2 Z:\home\localhost\framework\web\CController.php(869): WelcomeController->renderFile()
+#3 Z:\home\localhost\framework\web\CController.php(782): WelcomeController->renderPartial()
+#4 Z:\home\localhost\xtourism\protected\controllers\frontend\WelcomeController.php(77): WelcomeController->render()
+#5 Z:\home\localhost\framework\web\actions\CInlineAction.php(49): WelcomeController->actionIndex()
+#6 Z:\home\localhost\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): WelcomeController->runAction()
+#8 Z:\home\localhost\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\localhost\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): WelcomeController->filterAccessControl()
+#11 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 Z:\home\localhost\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): XssFilter->filter()
+#14 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#15 Z:\home\localhost\framework\web\CController.php(265): WelcomeController->runActionWithFilters()
+#16 Z:\home\localhost\framework\web\CWebApplication.php(282): WelcomeController->run()
+#17 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CWebApplication->run()
+#20 unknown(0): WebApplicationEndBehavior->runEnd()
+#21 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array()
+#22 Z:\home\localhost\xtourism\index.php(26): CWebApplication->__call()
+#23 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd()
+REQUEST_URI=/index.php/Welcome/index/
+in Z:\home\localhost\xtourism\protected\lib\TMyScripts.php (2229)
+in Z:\home\localhost\xtourism\protected\views\frontend\welcome\index.php (4)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\WelcomeController.php (77)
+2019/04/01 11:44:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "UserHotelShowcase".' in Z:\home\localhost\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController('UserHotelShowca...')
+#1 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('frontend')
+#4 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 Z:\home\localhost\xtourism\index.php(26): CComponent->__call('runEnd', Array)
+#6 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd('frontend')
+#7 {main}
+REQUEST_URI=/index.php/UserHotelShowcase/
+HTTP_REFERER=http://xtourism.localhost/index.php/ToursRequests
+---
+2019/04/01 11:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "UserHotelShowcase".' in Z:\home\localhost\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController('UserHotelShowca...')
+#1 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('frontend')
+#4 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#5 Z:\home\localhost\xtourism\index.php(26): CComponent->__call('runEnd', Array)
+#6 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd('frontend')
+#7 {main}
+REQUEST_URI=/index.php/UserHotelShowcase/
+HTTP_REFERER=http://xtourism.localhost/index.php/ToursRequests
+---
+2019/04/01 11:56:37 [error] [php] Fatal error: Call to a member function hasProduct() on a non-object (Z:\home\localhost\xtourism\protected\controllers\frontend\FrontTourShowcaseController.php:68)
+Stack trace:
+#0 Z:\home\localhost\xtourism\protected\extensions\error\FatalErrorCatch.php(38): CWebApplication->handleError()
+#1 unknown(0): FatalErrorCatch->shutdownHandler()
+REQUEST_URI=/index.php/FrontTourShowcase/
+in Z:\home\localhost\xtourism\protected\extensions\error\FatalErrorCatch.php (38)
+2019/04/01 11:58:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\localhost\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\xtourism\protected\controllers\frontend\FrontTourShowcaseController.php(72): CFilterChain->run()
+#3 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): FrontTourShowcaseController->filterACL(Object(CFilterChain))
+#4 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController('FrontTourShowca...')
+#9 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CApplication->run()
+#11 [internal function]: WebApplicationEndBehavior->runEnd('frontend')
+#12 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#13 Z:\home\localhost\xtourism\index.php(26): CComponent->__call('runEnd', Array)
+#14 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd('frontend')
+#15 {main}
+REQUEST_URI=/index.php/FrontTourShowcase/
+---
+2019/04/01 14:30:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\localhost\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\xtourism\protected\controllers\frontend\FrontTourShowcaseController.php(73): CFilterChain->run()
+#3 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): FrontTourShowcaseController->filterACL(Object(CFilterChain))
+#4 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController('FrontTourShowca...')
+#9 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CApplication->run()
+#11 [internal function]: WebApplicationEndBehavior->runEnd('frontend')
+#12 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#13 Z:\home\localhost\xtourism\index.php(26): CComponent->__call('runEnd', Array)
+#14 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd('frontend')
+#15 {main}
+REQUEST_URI=/index.php/FrontTourShowcase/
+---
+2019/04/01 14:30:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:30:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:30:16 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:30:17 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:30:17 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:30:17 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:38:30 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:38:30 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:38:30 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:38:30 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:38:30 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:38:30 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:39:50 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:39:50 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:39:50 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 14:39:50 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:39:50 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 14:39:50 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:15:28 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:15:28 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:15:28 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:15:28 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:15:28 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:15:28 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:17:17 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:17:17 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:17:17 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:17:17 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:17:17 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:17:17 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:20:11 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:20:11 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:20:11 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:20:11 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:20:11 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:20:11 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:37:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:37:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:37:09 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:37:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:37:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:37:09 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:03 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:03 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:03 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:31 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:31 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:31 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:31 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:31 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:31 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:41 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:41 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:41 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:41 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:41 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:41 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:41 [error] [php] Undefined variable: Settings (Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php:15)
+Stack trace:
+#0 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#1 Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php(35): UserTourShowcaseController->renderPartial()
+#2 Z:\home\localhost\framework\web\CBaseController.php(126): require()
+#3 Z:\home\localhost\framework\web\CBaseController.php(95): UserTourShowcaseController->renderInternal()
+#4 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#5 Z:\home\localhost\framework\web\CController.php(782): UserTourShowcaseController->renderPartial()
+#6 Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php(81): UserTourShowcaseController->render()
+#7 Z:\home\localhost\framework\web\actions\CInlineAction.php(49): UserTourShowcaseController->actionIndex()
+#8 Z:\home\localhost\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): UserTourShowcaseController->runAction()
+#10 Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php(13): CFilterChain->run()
+#11 Z:\home\localhost\framework\web\filters\CFilter.php(38): HasTourShowcaseProduct->preFilter()
+#12 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): HasTourShowcaseProduct->filter()
+#13 Z:\home\localhost\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): UserTourShowcaseController->filterAccessControl()
+#16 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\framework\web\CController.php(265): UserTourShowcaseController->runActionWithFilters()
+#19 Z:\home\localhost\framework\web\CWebApplication.php(282): UserTourShowcaseController->run()
+#20 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CWebApplication->run()
+#23 unknown(0): WebApplicationEndBehavior->runEnd()
+#24 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array()
+#25 Z:\home\localhost\xtourism\index.php(26): CWebApplication->__call()
+#26 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd()
+REQUEST_URI=/index.php/UserTourShowcase/
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (15)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (81)
+2019/04/01 15:38:52 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:52 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:52 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:38:52 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:52 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:38:52 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:39:00 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:39:00 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:39:00 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:39:00 [error] [php] Undefined variable: settings (Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php:13)
+Stack trace:
+#0 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#1 Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php(35): UserTourShowcaseController->renderPartial()
+#2 Z:\home\localhost\framework\web\CBaseController.php(126): require()
+#3 Z:\home\localhost\framework\web\CBaseController.php(95): UserTourShowcaseController->renderInternal()
+#4 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#5 Z:\home\localhost\framework\web\CController.php(782): UserTourShowcaseController->renderPartial()
+#6 Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php(81): UserTourShowcaseController->render()
+#7 Z:\home\localhost\framework\web\actions\CInlineAction.php(49): UserTourShowcaseController->actionIndex()
+#8 Z:\home\localhost\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): UserTourShowcaseController->runAction()
+#10 Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php(13): CFilterChain->run()
+#11 Z:\home\localhost\framework\web\filters\CFilter.php(38): HasTourShowcaseProduct->preFilter()
+#12 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): HasTourShowcaseProduct->filter()
+#13 Z:\home\localhost\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): UserTourShowcaseController->filterAccessControl()
+#16 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\framework\web\CController.php(265): UserTourShowcaseController->runActionWithFilters()
+#19 Z:\home\localhost\framework\web\CWebApplication.php(282): UserTourShowcaseController->run()
+#20 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CWebApplication->run()
+#23 unknown(0): WebApplicationEndBehavior->runEnd()
+#24 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array()
+#25 Z:\home\localhost\xtourism\index.php(26): CWebApplication->__call()
+#26 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd()
+REQUEST_URI=/index.php/UserTourShowcase/
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (81)
+2019/04/01 15:42:33 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:42:33 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:42:33 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:42:33 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:42:33 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:42:33 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:42:58 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:42:58 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:42:58 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:42:58 [error] [php] Trying to get property of non-object (Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php:15)
+Stack trace:
+#0 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#1 Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php(35): UserTourShowcaseController->renderPartial()
+#2 Z:\home\localhost\framework\web\CBaseController.php(126): require()
+#3 Z:\home\localhost\framework\web\CBaseController.php(95): UserTourShowcaseController->renderInternal()
+#4 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#5 Z:\home\localhost\framework\web\CController.php(782): UserTourShowcaseController->renderPartial()
+#6 Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php(81): UserTourShowcaseController->render()
+#7 Z:\home\localhost\framework\web\actions\CInlineAction.php(49): UserTourShowcaseController->actionIndex()
+#8 Z:\home\localhost\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): UserTourShowcaseController->runAction()
+#10 Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php(13): CFilterChain->run()
+#11 Z:\home\localhost\framework\web\filters\CFilter.php(38): HasTourShowcaseProduct->preFilter()
+#12 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): HasTourShowcaseProduct->filter()
+#13 Z:\home\localhost\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): UserTourShowcaseController->filterAccessControl()
+#16 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\framework\web\CController.php(265): UserTourShowcaseController->runActionWithFilters()
+#19 Z:\home\localhost\framework\web\CWebApplication.php(282): UserTourShowcaseController->run()
+#20 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CWebApplication->run()
+#23 unknown(0): WebApplicationEndBehavior->runEnd()
+#24 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array()
+#25 Z:\home\localhost\xtourism\index.php(26): CWebApplication->__call()
+#26 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd()
+REQUEST_URI=/index.php/UserTourShowcase/
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (15)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (81)
+2019/04/01 15:43:14 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:43:14 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:43:14 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:43:14 [error] [php] Undefined property: stdClass::$operators (Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php:15)
+Stack trace:
+#0 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#1 Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php(35): UserTourShowcaseController->renderPartial()
+#2 Z:\home\localhost\framework\web\CBaseController.php(126): require()
+#3 Z:\home\localhost\framework\web\CBaseController.php(95): UserTourShowcaseController->renderInternal()
+#4 Z:\home\localhost\framework\web\CController.php(869): UserTourShowcaseController->renderFile()
+#5 Z:\home\localhost\framework\web\CController.php(782): UserTourShowcaseController->renderPartial()
+#6 Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php(81): UserTourShowcaseController->render()
+#7 Z:\home\localhost\framework\web\actions\CInlineAction.php(49): UserTourShowcaseController->actionIndex()
+#8 Z:\home\localhost\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 Z:\home\localhost\framework\web\filters\CFilterChain.php(133): UserTourShowcaseController->runAction()
+#10 Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php(13): CFilterChain->run()
+#11 Z:\home\localhost\framework\web\filters\CFilter.php(38): HasTourShowcaseProduct->preFilter()
+#12 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): HasTourShowcaseProduct->filter()
+#13 Z:\home\localhost\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\localhost\framework\web\filters\CInlineFilter.php(58): UserTourShowcaseController->filterAccessControl()
+#16 Z:\home\localhost\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\localhost\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\framework\web\CController.php(265): UserTourShowcaseController->runActionWithFilters()
+#19 Z:\home\localhost\framework\web\CWebApplication.php(282): UserTourShowcaseController->run()
+#20 Z:\home\localhost\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\localhost\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 Z:\home\localhost\xtourism\protected\behaviors\WebApplicationEndBehavior.php(20): CWebApplication->run()
+#23 unknown(0): WebApplicationEndBehavior->runEnd()
+#24 Z:\home\localhost\framework\base\CComponent.php(261): call_user_func_array()
+#25 Z:\home\localhost\xtourism\index.php(26): CWebApplication->__call()
+#26 Z:\home\localhost\xtourism\index.php(26): CWebApplication->runEnd()
+REQUEST_URI=/index.php/UserTourShowcase/
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (15)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (81)
+2019/04/01 15:43:40 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:43:40 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:43:40 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:43:40 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:43:40 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:43:40 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (14)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:44:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:44:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:44:18 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:44:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:44:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:44:18 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:44:35 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:44:35 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:44:35 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:44:35 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:44:35 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:44:35 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:45:34 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:45:42 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:19 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:19 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:19 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:19 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:19 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:19 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:29 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:29 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:29 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:29 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:29 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:29 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:46:44 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:06 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:06 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:06 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:06 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:06 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:06 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:25 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:25 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:25 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:25 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:25 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:25 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:47:42 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:48:16 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 15:49:56 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:49:56 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:49:56 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 15:49:56 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:49:56 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 15:49:56 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:16:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:16:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:16:09 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:16:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:16:09 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:16:09 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:18 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:18 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:18 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:37 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:37 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:37 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:37 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:37 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:37 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:58 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:58 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:58 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:17:58 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:58 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:17:58 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:23:07 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:23:07 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:23:07 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:23:07 [error] [php] Fatal error: Class 'ShowcaseTour' not found (Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php:11)
+Stack trace:
+#0 Z:\home\localhost\xtourism\protected\extensions\error\FatalErrorCatch.php(38): CWebApplication->handleError()
+#1 unknown(0): FatalErrorCatch->shutdownHandler()
+REQUEST_URI=/index.php/UserTourShowcase/
+in Z:\home\localhost\xtourism\protected\extensions\error\FatalErrorCatch.php (38)
+2019/04/01 16:24:15 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:24:15 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:24:15 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:25:47 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:25:47 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:25:47 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:25:47 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:25:47 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:25:47 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:24 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:42:24 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:42:24 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:42:24 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:24 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:24 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\controllers\frontend\UserTourShowcaseController.php (66)
+in Z:\home\localhost\xtourism\protected\filters\HasTourShowcaseProduct.php (13)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\values.php (13)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (35)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "per_row" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "per_page" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)
+2019/04/01 16:42:38 [warning] [application] Не удалось присвоить небезопасный атрибут "max_tour_count" класса "TourShowcaseStandardSettings".
+in Z:\home\localhost\xtourism\protected\models\AR\ArUserTourShowcase.php (153)
+in Z:\home\localhost\xtourism\protected\views\common\tour_showcase\filters.php (23)
+in Z:\home\localhost\xtourism\protected\views\frontend\userTourShowcase\index.php (43)

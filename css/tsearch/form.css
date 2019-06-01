@@ -1,0 +1,1410 @@
+/**/
+/* fonts */
+/**/
+/*@import url(../awesome_4.4.0/css/font-awesome.min.css);*/
+@import url(../font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic);
+
+
+
+/**/
+/* elements */
+/**/
+#divASContainer{ position: relative; }
+.div-as-container{ position: relative; }
+#classicLightModuleID, #classicStandartModuleID, #classicFullModuleID{ position: relative; }
+.xtourism {
+    position: relative;
+    min-width: 160px;
+    margin: 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.95) /*url(/v2/images/palm.png)*/ 100% 100% no-repeat;
+
+    -webkit-box-sizing:  	border-box;
+    -moz-box-sizing:  	border-box;
+    box-sizing:  	border-box;
+}
+.xtourism-clean {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+.xtourism * {
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    font-style: normal;
+    line-height: 1;
+    font-weight: 400;
+    font-family: Ubuntu, sans-serif !important;
+    text-align: left;
+    text-decoration: none;
+    -webkit-appearance: none;
+
+    -webkit-box-sizing:  	border-box;
+    -moz-box-sizing:  	border-box;
+    box-sizing:  	border-box;
+    /*
+
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+*/
+}
+.xtourism input[type="text"] {
+    border-radius: 0;
+}
+.xtourism ul {
+    margin: 0;
+}
+
+.xtourism .fa {
+    font-family: FontAwesome !important;
+}
+.xtourism ul>li:before {
+    margin: 0;
+}
+.xtourism select option {
+    padding-left: 30px !important;
+}
+.xtourism select optgroup {
+    padding-left: 10px !important;
+    font-weight: bold;
+}
+.xtourism-form {
+    position: relative;
+    /* margin: 0 -10px; */
+}
+.xtourism-label {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-bottom: 3px;
+    font-size: 11px;
+    line-height: 15px;
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    color: #808080;
+}
+.xtourism-label.hotel-label {
+    width: auto;
+}
+.xtourism-label.hotel-label {
+    width: auto;
+}
+.xtourism-label.hotel-actions-label {
+    width: auto;
+    display:inline-block;
+    float: right;
+}
+.hotel-actions-label a, .hotel-actions-label a:active, .hotel-actions-label a:visited{
+    text-decoration: underline;
+    color: #333;
+}
+.hotel-actions-label a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.hotel-actions-label a.non-active{
+    display:none;
+}
+.hotel-actions-label a.non-access{
+    color: #808080;
+    cursor: default;
+    text-decoration: none;
+}
+.xtourism-label i {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    font: 14px/1 FontAwesome;
+}
+.xtourism-input {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.xtourism .clearfix {
+    margin: 0 10px;
+}
+.xtourism .clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+/**/
+/* input, select */
+/**/
+.xtourism-input-text,
+.xtourism-input-select {
+    position: relative;
+}
+.xtourism-input-select:before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    width: 28px;
+    background: #fff;
+    pointer-events: none;
+}
+.xtourism-input-select:after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 11px;
+    margin-top: -2px;
+    background: #fff;
+    border-top: 4px solid #ababab;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    pointer-events: none;
+}
+.xtourism-input-text input,
+.xtourism-input-select select {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #f5f5f5;
+    background: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: default;
+    color: #333;
+    -ms-transition: border-color 0.3s, box-shadow 0.3s;
+    -moz-transition: border-color 0.3s, box-shadow 0.3s;
+    -webkit-transition: border-color 0.3s, box-shadow 0.3s;
+}
+.xtourism-input-select select {
+    padding-right: 0 !important;
+}
+.xtourism-input-text input:hover,
+.xtourism-input-select select:hover {
+    z-index: 1;
+    border-color: #ababab;
+}
+.xtourism-input-text input:focus,
+.xtourism-input-select select:focus {
+    z-index: 2;
+    border-color: #7f8c8d;
+    box-shadow: 0 0 2px #95a5a6;
+}
+.xtourism-input-text .prepend,
+.xtourism-input-select .prepend {
+    position: absolute;
+    z-index: 3;
+    top: 1px;
+    left: 1px;
+    width: 28px;
+    padding: 4px 0;
+    border-right: 1px solid #ccc;
+    background: rgba(0,0,0,0.05);
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    color: #666;
+    pointer-events: none;
+}
+.xtourism-input-text .prepend + input,
+.xtourism-input-select .prepend + select {
+    padding-left: 38px;
+}
+.xtourism-input-disabled {
+    opacity: 0.5;
+}
+
+
+
+/**/
+/* switcher */
+/**/
+.xtourism-input-switcher input {
+    display: none;
+}
+.xtourism-input-switcher label {
+    display: inline-block;
+    width: 25%;
+    padding: 4px 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: inset 0 1px 2px #f5f5f5;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    -ms-transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+    -moz-transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+    -webkit-transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+    -webkit-user-select: none;
+}
+.xtourism-input-switcher label:hover {
+    border-color: #ababab;
+    box-shadow: inset 0 1px 2px #d4d4d4;
+}
+.xtourism-input-switcher label:hover {
+    color: #000;
+}
+.xtourism-input-switcher input:checked + label {
+    border-color: #7f8c8d;
+    background: #95a5a6;
+    box-shadow: inset 0 1px rgba(255,255,255,0.25);
+    color: #fff;
+}
+.xtourism-input-switcher-2 label {
+    width: 50%;
+}
+
+
+
+/**/
+/* checkbox */
+/**/
+.xtourism-input-checkbox input {
+    display: none;
+}
+.xtourism-input-checkbox label {
+    position: relative;
+    display: block;
+    margin-top: 6px;
+    padding-left: 28px;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    color: #808080;
+    transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -webkit-user-select: none;
+}
+.xtourism-input-checkbox label:after,
+.xtourism-input-checkbox label:before {
+    content: '';
+    position: absolute;
+    top: 0; /* !!! top: 50%;*/
+}
+.xtourism-input-checkbox label:before {
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 0;  /* !!! margin-top: -9px;*/
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #f5f5f5;
+    background: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    -ms-transition: border-color 0.3s, box-shadow 0.3s;
+    -moz-transition: border-color 0.3s, box-shadow 0.3s;
+    -webkit-transition: border-color 0.3s, box-shadow 0.3s;
+}
+.xtourism-input-checkbox label:after {
+    content: "\f00c";
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    font-family: FontAwesome !important;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #95a5a6;
+    opacity: 0;
+    transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+}
+.xtourism-input-checkbox label:hover:before {
+    border-color: #ababab;
+    box-shadow: inset 0 1px 2px #d4d4d4;
+}
+.xtourism-input-checkbox input:checked + label {
+    color: #333;
+}
+.xtourism-input-checkbox input:checked + label:after {
+    opacity: 1;
+}
+
+
+
+/**/
+/* group */
+/**/
+.xtourism-input-group {
+    position: relative;
+    height: 231px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*margin-top: -1px;*/
+    padding: 3px 0 3px 10px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #f5f5f5;
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    -ms-transition: border-color 0.3s, box-shadow 0.3s;
+    -moz-transition: border-color 0.3s, box-shadow 0.3s;
+    -webkit-transition: border-color 0.3s, box-shadow 0.3s;
+}
+#xtourism-section-operators .xtourism-input-group, #xtourism-section-operators .xtourism-input-group .xtourism-input, #xtourism-section-resorts .xtourism-input-group {
+    height: 262px;
+}
+#xtourism-section-viewtype {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.xtourism-input-group ul{
+    margin: 0 !important;
+}
+.xtourism-input-group-title
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 0 ;
+}
+.xtourism-input-group:hover {
+    z-index: 1;
+    border-color: #ababab;
+    box-shadow: inset 0 1px 2px #d4d4d4;
+}
+.xtourism-input-group ul li {
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333;
+    -ms-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    background-image: none !important;
+    padding-left: 0 !important;
+}
+.xtourism-input-group ul li i {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #f5f5f5;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    -ms-transition: border-color 0.3s, box-shadow 0.3s;
+    -moz-transition: border-color 0.3s, box-shadow 0.3s;
+    -webkit-transition: border-color 0.3s, box-shadow 0.3s;
+}
+.xtourism-input-group ul li:hover i {
+    border-color: #ababab;
+    box-shadow: inset 0 1px 2px #d4d4d4;
+}
+.xtourism-input-group ul li.active {
+    color: #333;
+}
+.xtourism-input-group .active i {
+    position: relative;
+}
+.xtourism-input-group .active i:after {
+    content: "\f00c";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    font-family: FontAwesome !important;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #95a5a6;
+}
+
+
+
+/**/
+/* expand */
+/**/
+.xtourism-expand {
+    position: relative;
+    margin: 0 -10px 15px;
+}
+.xtourism-expand:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.xtourism-expand a, .xtourism-expand a:hover, .xtourism-expand a:link, .xtourism-expand a:active , .xtourism-expand a:visited{
+    position: relative;
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+    border: 1px solid #bdc3c7;
+    background: #ecf0f1;
+    box-shadow: inset 0 1px rgba(255,255,255,0.25), 0 1px 0 rgba(0,0,0,0.1);
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.xtourism-expand a:active {
+    position: relative;
+    top: 1px;
+    box-shadow: inset 0 -1px rgba(255,255,255,0.25), inset 0 1px 0 rgba(0,0,0,0.1);
+}
+.xtourism-expand a:before {
+    content: 'ОСТАЛЬНЫЕ ПАРАМЕТРЫ';
+}
+.xtourism-expanded .xtourism-expand a:before {
+    content: 'СВЕРНУТЬ';
+}
+
+.xtourism-minimized .xtourism-ajax-loader{
+    display: none !important;
+}
+
+
+/**/
+/* button */
+/**/
+.xtourism-button {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0 50px 0 30px;
+    border: 1px solid #7f8c8d;
+    background: #95a5a6;
+    box-shadow: inset 0 1px rgba(255,255,255,0.25), 0 1px 3px rgba(0,0,0,0.25);
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    color: #fff;
+}
+.xtourism-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    margin-top: -3px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #fff;
+}
+.xtourism-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background: #7f8c8d;
+}
+.xtourism-button:active {
+    position: relative;
+    top: 1px;
+    box-shadow: inset 0 -1px rgba(255,255,255,0.25), inset 0 1px 3px rgba(0,0,0,0.25);
+}
+.xtourism-link {
+    margin-top: 5px;
+    text-align: right;
+}
+.xtourism-link a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #95a5a6;
+}
+.xtourism-link a:hover {
+    text-decoration: none;
+}
+
+
+
+/**/
+/* datepicker */
+/**/
+
+.xtourism-body div.ui-datepicker {
+    font-family: Ubuntu, sans-serif !important;
+    padding-top: 0!important;
+}
+
+.xtourism-body div.ui-datepicker table {
+    margin: 0 0 .3em;
+}
+
+/*
+.xtourism-body .hasDatepicker {
+    position: absolute;
+    z-index: 4;
+    top: 100%;
+    left: 0;
+    margin: 1px 0 0 0;
+    display: none;
+}*/
+
+/*.xtourism-body .ui-datepicker {*/
+    /*padding: 4px;*/
+    /*border: 1px solid #7f8c8d;*/
+    /*background: #fff;*/
+    /*box-shadow: 0 0 2px #95a5a6;*/
+    /*text-align: center;*/
+/*}*/
+
+.xtourism-body .ui-datepicker-header {
+    background: rgba(0,0,0,0.05);
+    border-radius: 0;
+    margin: -1px;
+    border-width: 0 0 1px 0;
+}
+
+.xtourism-body .ui-datepicker-title {
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    border-bottom: 0;
+    background: none;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+    margin: 1px 3px!important;
+}
+
+.xtourism-body .ui-datepicker-title span {
+    font-size: 14px;
+}
+.xtourism-body .ui-datepicker-prev,
+.xtourism-body .ui-datepicker-next {
+    display: block;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #95a5a6;
+    height: 35px;
+    top: 4px!important;
+}
+.xtourism-body .ui-datepicker-prev span,
+.xtourism-body .ui-datepicker-next span
+{
+    left: 35%;
+    margin: 0;
+    top: 0;
+}
+.xtourism-body .ui-datepicker-prev *,
+.xtourism-body .ui-datepicker-next * {
+    font-family: FontAwesome !important;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+
+
+/*.xtourism-body .ui-datepicker .ui-icon {*/
+    /*text-indent: -0;*/
+    /*height: 26px;*/
+    /*background-image: none;*/
+/*}*/
+/*.xtourism-body .ui-datepicker .ui-state-hover {*/
+    /*background-image: none;*/
+/*}*/
+/*.xtourism-body .ui-datepicker-prev {*/
+    /*float: left;*/
+/*}*/
+/*.xtourism-body .ui-datepicker-next {*/
+    /*float: right;*/
+/*}*/
+/*.xtourism-body .ui-datepicker-calendar {*/
+    /*width: 100%;*/
+    /*border-collapse: collapse;*/
+/*}*/
+.xtourism-body .ui-datepicker-calendar th {
+    padding: 4px 5px;
+}
+.xtourism-body .ui-datepicker-calendar th span {
+    font-size: 11px;
+    color: #000;
+}
+.xtourism-body .ui-datepicker-calendar td {
+    padding: 0;
+    border: 0;
+}
+.xtourism-body .ui-datepicker-calendar th {
+    border: 0;
+}
+.xtourism-body .ui-datepicker-calendar td a {
+    display: block;
+    border: 1px solid transparent;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+    padding: 2px 5px;
+}
+
+.xtourism-body .ui-datepicker-calendar td a:hover {
+    color: #000;
+}
+
+.xtourism-body .ui-datepicker-calendar td span {
+    display: block;
+    border: 1px solid transparent;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #95a5a6;
+    opacity: 0.5;
+    padding: 2px 5px;
+}
+
+.xtourism-body .ui-state-disabled{
+    opacity: 1!important;
+}
+
+.xtourism-body .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #7f8c8d;
+    background: #95a5a6;
+    box-shadow: inset 0 1px rgba(255,255,255,0.25);
+    color: #fff !important;
+}
+.xtourism-body .ui-datepicker-calendar .ui-datepicker-current-day a:hover {
+    color: #fff !important;
+}
+
+
+
+/**/
+/* sections */
+/**/
+.xtourism-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0 10px;
+}
+.xtourism-subsection {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.xtourism-section-dates .xtourism-input {
+    width: 49%;
+}
+.xtourism-section-dates .xtourism-input + .xtourism-input {
+    margin-left: 2%;
+}
+
+.xtourism-section-people .xtourism-input,
+.xtourism-section-people .xtourism-label-narrow {
+    width: 49%;
+}
+.xtourism-section-people .xtourism-input-select {
+    width: 32%;
+}
+.xtourism-section-people .xtourism-label + .xtourism-label,
+.xtourism-section-people .xtourism-input + .xtourism-input {
+    margin-left: 2%
+}
+
+.xtourism-section-price .xtourism-input {
+    width: 49%;
+}
+.xtourism-section-price .xtourism-input + .xtourism-input {
+    margin-left: 2%;
+}
+.xtourism-section-price .xtourism-input.ffilter{
+    width: 100%;
+    margin-left: 0 !important;
+}
+.xtourism-section-price .xtourism-input.ffilter + .xtourism-input {
+    margin-top: 7px;
+}
+
+.xtourism-section-food .xtourism-input-select,
+.xtourism-section-category .xtourism-input-select {
+    display: block;
+    width: auto;
+    margin-right: 91px;
+}
+.xtourism-section-food .xtourism-input-checkbox,
+.xtourism-section-category .xtourism-input-checkbox {
+    float: right;
+    width: auto;
+    white-space: nowrap;
+}
+
+.xtourism-section-resorts .xtourism-input-checkbox,
+.xtourism-section-hotels .xtourism-input-checkbox {
+    margin-top: -11px;
+}
+
+
+
+/**/
+/* layouts */
+/**/
+.xtourism-xnarrow .xtourism-section-people,
+.xtourism-xnarrow .xtourism-section-price,
+.xtourism-xnarrow .xtourism-section-currency,
+.xtourism-xnarrow .xtourism-section-food,
+.xtourism-xnarrow .xtourism-section-category,
+.xtourism-xnarrow .xtourism-section-resorts,
+.xtourism-xnarrow .xtourism-section-hotels,
+.xtourism-xnarrow .xtourism-section-operators {
+    display: none;
+}
+.xtourism-xnarrow .xtourism-expand {
+    margin-top: 5px;
+}
+.xtourism-xnarrow .xtourism-button {
+    float: none;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 0;
+}
+.xtourism-xnarrow .xtourism-link {
+    text-align: center;
+}
+.xtourism-xnarrow.xtourism-expanded .xtourism-section-people,
+.xtourism-xnarrow.xtourism-expanded .xtourism-section-food,
+.xtourism-xnarrow.xtourism-expanded .xtourism-section-category {
+    display: inline-block;
+}
+
+.xtourism-narrow .xtourism-section-price,
+.xtourism-narrow .xtourism-section-currency,
+.xtourism-narrow .xtourism-section-resorts,
+.xtourism-narrow .xtourism-section-hotels,
+.xtourism-narrow .xtourism-section-operators,
+.xtourism-narrow .xtourism-link {
+    display: none;
+}
+.xtourism-narrow .xtourism-section-direction,
+.xtourism-narrow .xtourism-section-dates,
+.xtourism-narrow .xtourism-section-people {
+    padding: 0;
+}
+.xtourism-narrow .xtourism-section-direction .xtourism-subsection,
+.xtourism-narrow .xtourism-section-dates .xtourism-subsection,
+.xtourism-narrow .xtourism-section-people .xtourism-subsection,
+.xtourism-narrow .xtourism-section-food,
+.xtourism-narrow .xtourism-section-category,
+.xtourism-narrow .xtourism-section-price,
+.xtourism-narrow .xtourism-section-currency,
+.xtourism-narrow .xtourism-section-resorts,
+.xtourism-narrow .xtourism-section-hotels {
+    width: 50%;
+    padding: 0 15px;
+}
+.main-search-form .xtourism-narrow .xtourism-section-resorts,
+.main-search-form .xtourism-narrow .xtourism-section-hotels,
+.main-search-form .xtourism-narrow .xtourism-section-operators {
+    width: 33.33%;
+    padding: 0 15px;
+}
+.xtourism-narrow.xtourism-expanded .xtourism-section-price,
+.xtourism-narrow.xtourism-expanded .xtourism-section-currency,
+.xtourism-narrow.xtourism-expanded .xtourism-section-food,
+.xtourism-narrow.xtourism-expanded .xtourism-section-category,
+.xtourism-narrow.xtourism-expanded .xtourism-section-resorts,
+.xtourism-narrow.xtourism-expanded .xtourism-section-hotels,
+.xtourism-narrow.xtourism-expanded .xtourism-section-operators {
+    display: inline-block;
+}
+
+.xtourism-medium .xtourism-section-price,
+.xtourism-medium .xtourism-section-currency,
+.xtourism-medium .xtourism-section-resorts,
+.xtourism-medium .xtourism-section-hotels,
+.xtourism-medium .xtourism-section-operators,
+.xtourism-medium .xtourism-link {
+    display: none;
+}
+.xtourism-medium .xtourism-section-dates,
+.xtourism-medium .xtourism-section-people,
+.xtourism-medium .xtourism-section-direction {
+    width: 33.33%;
+}
+.xtourism-medium .xtourism-section-food,
+.xtourism-medium .xtourism-section-category,
+.xtourism-medium .xtourism-section-price,
+.xtourism-medium .xtourism-section-currency,
+.xtourism-medium .xtourism-section-resorts,
+.xtourism-medium .xtourism-section-hotels {
+    width: 50%;
+}
+
+.main-search-form .xtourism-medium .xtourism-section-resorts,
+.main-search-form .xtourism-medium .xtourism-section-hotels,
+.main-search-form .xtourism-medium .xtourism-section-operators {
+    width: 33.33%;
+}
+.xtourism-medium.xtourism-expanded .xtourism-section-price,
+.xtourism-medium.xtourism-expanded .xtourism-section-currency,
+.xtourism-medium.xtourism-expanded .xtourism-section-food,
+.xtourism-medium.xtourism-expanded .xtourism-section-category,
+.xtourism-medium.xtourism-expanded .xtourism-section-resorts,
+.xtourism-medium.xtourism-expanded .xtourism-section-hotels,
+.xtourism-medium.xtourism-expanded .xtourism-section-operators {
+    display: inline-block;
+}
+
+.xtourism-wide .xtourism-section-resorts,
+.xtourism-wide .xtourism-section-hotels,
+.xtourism-wide .xtourism-section-operators,
+.xtourism-wide .xtourism-link {
+    display: none;
+}
+.xtourism-wide .xtourism-section-direction {
+    padding: 0;
+}
+.xtourism-wide .xtourism-section-direction .xtourism-subsection,
+.xtourism-wide .xtourism-section-dates,
+.xtourism-wide .xtourism-section-dates .xtourism-subsection,
+.xtourism-wide .xtourism-section-people,
+.xtourism-wide .xtourism-section-people .xtourism-subsection {
+    width: 50%;
+    padding: 0;
+}
+.xtourism-wide .xtourism-section-direction .xtourism-subsection,
+.xtourism-wide .xtourism-section-dates .xtourism-subsection,
+.xtourism-wide .xtourism-section-people .xtourism-subsection {
+    padding: 0 10px;
+}
+.xtourism-wide .xtourism-section-food,
+.xtourism-wide .xtourism-section-category,
+.xtourism-wide .xtourism-section-price,
+.xtourism-wide .xtourism-section-currency {
+    width: 25%;
+}
+.xtourism-wide .xtourism-section-resorts,
+.xtourism-wide .xtourism-section-hotels {
+    width: 50%;
+}
+.main-search-form .xtourism-wide .xtourism-section-resorts,
+.main-search-form .xtourism-wide .xtourism-section-hotels,
+.main-search-form .xtourism-wide .xtourism-section-operators {
+    width: 33.33%;
+}
+.xtourism-wide.xtourism-expanded .xtourism-section-resorts,
+.xtourism-wide.xtourism-expanded .xtourism-section-hotels,
+.xtourism-wide.xtourism-expanded .xtourism-section-operators {
+    display: inline-block;
+}
+
+
+
+/**/
+/* sizes */
+/**/
+.xtourism-small .xtourism-input-text input,
+.xtourism-small .xtourism-input-select select {
+    height: 26px;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.xtourism-small .xtourism-input-select:before {
+    width: 24px;
+}
+.xtourism-small .xtourism-input-select:after {
+    right: 9px;
+}
+.xtourism-small .xtourism-input-text .prepend,
+.xtourism-small .xtourism-input-select .prepend {
+    width: 24px;
+    font-size: 11px;
+    line-height: 16px;
+}
+.xtourism-small .xtourism-input-text .prepend + input,
+.xtourism-small .xtourism-input-select .prepend + select {
+    padding-left: 32px;
+}
+.xtourism-small .xtourism-input-switcher label,
+.xtourism-small .xtourism-input-checkbox label {
+    font-size: 12px;
+    line-height: 16px;
+}
+.xtourism-small .xtourism-input-checkbox label {
+    margin-top: 5px;
+    padding-left: 21px;
+}
+.xtourism-small .xtourism-input-checkbox label:before {
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+}
+.xtourism-small .xtourism-input-checkbox label:after {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.xtourism-small .xtourism-input-group {
+    padding-left: 8px;
+}
+.xtourism-small .xtourism-section-food .xtourism-input-select,
+.xtourism-small .xtourism-section-category .xtourism-input-select {
+    margin-right: 77px;
+}
+.xtourism-small .xtourism-link a {
+    font-size: 11px;
+}
+
+
+
+/************************** Datepicker **************************/
+
+/*.xtourism-small .ui-datepicker-title {*/
+    /*font-size: 12px;*/
+    /*line-height: 26px;*/
+/*}*/
+/*.xtourism-small .ui-datepicker-title span {*/
+    /*font-size: 12px;*/
+/*}*/
+/*.xtourism-small .ui-datepicker-prev,*/
+/*.xtourism-small .ui-datepicker-next {*/
+    /*width: 26px;*/
+/*}*/
+/*.xtourism-small .ui-datepicker-prev *,*/
+/*.xtourism-small .ui-datepicker-next * {*/
+    /*font-size: 12px;*/
+    /*line-height: 26px;*/
+/*}*/
+/*.xtourism-small .ui-datepicker-calendar th span {*/
+    /*font-size: 10px;*/
+/*}*/
+/*.xtourism-small .ui-datepicker-calendar td a,*/
+/*.xtourism-small .ui-datepicker-calendar td span {*/
+    /*padding: 3px 4px;*/
+    /*font-size: 12px;*/
+/*}*/
+
+.xtourism-small .xtourism-subsection {
+    margin-bottom: 10px;
+}
+
+
+.xtourism-large .xtourism-input-text input,
+.xtourism-large .xtourism-input-select select {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.xtourism-large .xtourism-input-select:before {
+    width: 32px;
+}
+.xtourism-large .xtourism-input-select:after {
+    right: 13px;
+}
+.xtourism-large .xtourism-input-text .prepend,
+.xtourism-large .xtourism-input-select .prepend {
+    width: 32px;
+    line-height: 24px;
+}
+.xtourism-large .xtourism-input-text .prepend + input,
+.xtourism-large .xtourism-input-select .prepend + select {
+    padding-left: 44px;
+}
+.xtourism-large .xtourism-input-switcher label {
+    font-size: 16px;
+    line-height: 24px;
+}
+.xtourism-large .xtourism-input-checkbox label {
+    margin-top: 8px;
+}
+
+/*.xtourism-large .ui-datepicker-title {*/
+    /*font-size: 16px;*/
+    /*line-height: 34px;*/
+/*}*/
+/*.xtourism-large .ui-datepicker-title span {*/
+    /*font-size: 16px;*/
+/*}*/
+/*.xtourism-large .ui-datepicker-prev,*/
+/*.xtourism-large .ui-datepicker-next {*/
+    /*width: 34px;*/
+/*}*/
+/*.xtourism-large .ui-datepicker-prev *,*/
+/*.xtourism-large .ui-datepicker-next * {*/
+    /*font-size: 14px;*/
+    /*line-height: 34px;*/
+/*}*/
+/*.xtourism-large .ui-datepicker-calendar th span {*/
+    /*font-size: 12px;*/
+/*}*/
+/*.xtourism-large .ui-datepicker-calendar td a,*/
+/*.xtourism-large .ui-datepicker-calendar td span {*/
+    /*padding: 5px;*/
+    /*font-size: 16px;*/
+/*}*/
+
+.xtourism-large .xtourism-subsection {
+    margin-bottom: 20px;
+}
+.xtourism-large .xtourism-section-resorts .xtourism-input-checkbox,
+.xtourism-large .xtourism-section-hotels .xtourism-input-checkbox {
+    margin-top: -18px;
+}
+
+
+
+/**/
+/* types */
+/**/
+.xtourism-rounded-3 .xtourism-button,
+.xtourism-rounded-3 .ui-datepicker,
+.xtourism-rounded-3 .xtourism-input-group,
+.xtourism-rounded-3 .xtourism-input-text input,
+.xtourism-rounded-3 .xtourism-input-select select,
+.xtourism-rounded-3 .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-radius: 3px;
+}
+.xtourism-rounded-3 .xtourism-input-select:after {
+    border-radius: 34px;
+}
+.xtourism-rounded-3 .xtourism-input-select:before {
+    border-radius: 3px;
+}
+.xtourism-rounded-3 .xtourism-input-text .prepend,
+.xtourism-rounded-3 .xtourism-input-select .prepend {
+    border-radius: 2px 0 0 2px;
+}
+.xtourism-rounded-3 .xtourism-input-switcher label:last-child {
+    border-radius: 0 3px 3px 0;
+}
+.xtourism-rounded-3 .xtourism-input-switcher label:nth-child(2) {
+    border-radius: 3px 0 0 3px;
+}
+
+
+.xtourism-rounded-4 .xtourism-button,
+.xtourism-rounded-4 .ui-datepicker,
+.xtourism-rounded-4 .xtourism-input-group,
+.xtourism-rounded-4 .xtourism-input-text input,
+.xtourism-rounded-4 .xtourism-input-select select,
+.xtourism-rounded-4 .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-radius: 4px;
+}
+.xtourism-rounded-4 .xtourism-input-select:after {
+    border-radius: 4px;
+}
+.xtourism-rounded-4 .xtourism-input-select:before {
+    border-radius: 4px;
+}
+.xtourism-rounded-4 .xtourism-input-text .prepend,
+.xtourism-rounded-4 .xtourism-input-select .prepend {
+    border-radius: 3px 0 0 3px;
+}
+.xtourism-rounded-4 .xtourism-input-switcher label:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.xtourism-rounded-4 .xtourism-input-switcher label:nth-child(2) {
+    border-radius: 4px 0 0 4px;
+}
+
+
+
+.xtourism-rounded-8 .xtourism-button,
+.xtourism-rounded-8 .ui-datepicker,
+.xtourism-rounded-8 .xtourism-input-group,
+.xtourism-rounded-8 .xtourism-input-text input,
+.xtourism-rounded-8 .xtourism-input-select select,
+.xtourism-rounded-8 .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-radius: 8px;
+}
+.xtourism-rounded-8 .xtourism-input-select:after {
+    border-radius: 8px;
+}
+.xtourism-rounded-8 .xtourism-input-select:before {
+    border-radius: 8px;
+}
+.xtourism-rounded-8.xtourism-input-text .prepend,
+.xtourism-rounded-8 .xtourism-input-select .prepend {
+    border-radius: 7px 0 0 7px;
+}
+.xtourism-rounded-8 .xtourism-input-switcher label:last-child {
+    border-radius: 0 8px 8px 0;
+}
+.xtourism-rounded-8 .xtourism-input-switcher label:nth-child(2) {
+    border-radius: 8px 0 0 8px;
+}
+
+
+
+.xtourism-rounded-12 .xtourism-button,
+.xtourism-rounded-12 .ui-datepicker,
+.xtourism-rounded-12 .xtourism-input-group,
+.xtourism-rounded-12 .xtourism-input-text input,
+.xtourism-rounded-12 .xtourism-input-select select,
+.xtourism-rounded-12 .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-radius: 12px;
+}
+.xtourism-rounded-12 .xtourism-input-select:after {
+    border-radius: 12px;
+}
+.xtourism-rounded-12 .xtourism-input-select:before {
+    border-radius: 12px;
+}
+.xtourism-rounded-12 .xtourism-input-text .prepend,
+.xtourism-rounded-12 .xtourism-input-select .prepend {
+    border-radius: 11px 0 0 11px;
+}
+.xtourism-rounded-12 .xtourism-input-switcher label:last-child {
+    border-radius: 0 12px 12px 0;
+}
+.xtourism-rounded-12 .xtourism-input-switcher label:nth-child(2) {
+    border-radius: 12px 0 0 12px;
+}
+
+
+
+.xtourism-rounded-18 .xtourism-button,
+.xtourism-rounded-18 .ui-datepicker,
+.xtourism-rounded-18 .xtourism-input-group,
+.xtourism-rounded-18 .xtourism-input-text input,
+.xtourism-rounded-18 .xtourism-input-select select,
+.xtourism-rounded-18 .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-radius: 18px;
+}
+.xtourism-rounded-18 .xtourism-input-select:after {
+    border-radius: 18px;
+}
+.xtourism-rounded-18 .xtourism-input-select:before {
+    border-radius: 18px;
+}
+.xtourism-rounded-18 .xtourism-input-text .prepend,
+.xtourism-rounded-18 .xtourism-input-select .prepend {
+    border-radius: 17px 0 0 17px;
+}
+.xtourism-rounded-18 .xtourism-input-switcher label:last-child {
+    border-radius: 0 18px 18px 0;
+}
+.xtourism-rounded-18 .xtourism-input-switcher label:nth-child(2) {
+    border-radius: 18px 0 0 18px;
+}
+
+
+/**/
+/* colors */
+/**/
+.xtourism-red .ui-datepicker,
+.xtourism-red .xtourism-input-text input:focus,
+.xtourism-red .xtourism-input-select select:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 2px #e74c3c;
+}
+.xtourism-red .xtourism-button,
+.xtourism-red .xtourism-input-switcher input:checked + label,
+.xtourism-red .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #c0392b;
+    background: #e74c3c;
+}
+.xtourism-red .xtourism-button:before {
+    background: #c0392b;
+}
+.xtourism-red .ui-datepicker-prev,
+.xtourism-red .ui-datepicker-next,
+.xtourism-red .xtourism-input-checkbox label:after,
+.xtourism-red .xtourism-input-group .active i:after,
+.xtourism-red .xtourism-link a {
+    color: #e74c3c;
+}
+
+.xtourism-orange  .ui-datepicker,
+.xtourism-orange .xtourism-input-text input:focus,
+.xtourism-orange .xtourism-input-select select:focus {
+    border-color: #d35400;
+    box-shadow: 0 0 2px #e67e22;
+}
+.xtourism-orange .xtourism-button,
+.xtourism-orange .xtourism-input-switcher input:checked + label,
+.xtourism-orange .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #d35400;
+    background: #F97F1B;
+}
+
+.xtourism-button {
+    margin-left: 10px;
+}
+.xtourism-orange .xtourism-button:before {
+    background: #d35400;
+}
+.xtourism-orange #buttonClear {
+    /*background: #d35400;	*/
+}
+.xtourism-orange #buttonSettings {
+    /*background: #d35400;	*/
+}
+.xtourism-orange .ui-datepicker-prev,
+.xtourism-orange .ui-datepicker-next,
+.xtourism-orange .xtourism-input-checkbox label:after,
+.xtourism-orange .xtourism-input-group .active i:after,
+.xtourism-orange .xtourism-link a {
+    color: #e67e22;
+}
+
+.xtourism-yellow .ui-datepicker,
+.xtourism-yellow .xtourism-input-text input:focus,
+.xtourism-yellow .xtourism-input-select select:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 2px #f1c40f;
+}
+.xtourism-yellow .xtourism-button,
+.xtourism-yellow .xtourism-input-switcher input:checked + label,
+.xtourism-yellow .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #f39c12;
+    background: #f1c40f;
+}
+.xtourism-yellow .xtourism-button:before {
+    background: #f39c12;
+}
+.xtourism-yellow .ui-datepicker-prev,
+.xtourism-yellow .ui-datepicker-next,
+.xtourism-yellow .xtourism-input-checkbox label:after,
+.xtourism-yellow .xtourism-input-group .active i:after,
+.xtourism-yellow .xtourism-link a {
+    color: #f1c40f;
+}
+
+.xtourism-green .ui-datepicker,
+.xtourism-green .xtourism-input-text input:focus,
+.xtourism-green .xtourism-input-select select:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 2px #2ecc71;
+}
+.xtourism-green .xtourism-button,
+.xtourism-green .xtourism-input-switcher input:checked + label,
+.xtourism-green .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #27ae60;
+    background: #2ecc71;
+}
+.xtourism-green .xtourism-button:before {
+    background: #27ae60;
+}
+.xtourism-green .ui-datepicker-prev,
+.xtourism-green .ui-datepicker-next,
+.xtourism-green .xtourism-input-checkbox label:after,
+.xtourism-green .xtourism-input-group .active i:after,
+.xtourism-green .xtourism-link a {
+    color: #2ecc71;
+}
+
+.xtourism-cyan .ui-datepicker,
+.xtourism-cyan .xtourism-input-text input:focus,
+.xtourism-cyan .xtourism-input-select select:focus {
+    border-color: #16a085;
+    box-shadow: 0 0 2px #1abc9c;
+}
+.xtourism-cyan .xtourism-button,
+.xtourism-cyan .xtourism-input-switcher input:checked + label,
+.xtourism-cyan .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #16a085;
+    background: #1abc9c;
+}
+.xtourism-cyan .xtourism-button:before {
+    background: #16a085;
+}
+.xtourism-cyan .ui-datepicker-prev,
+.xtourism-cyan .ui-datepicker-next,
+.xtourism-cyan .xtourism-input-checkbox label:after,
+.xtourism-cyan .xtourism-input-group .active i:after,
+.xtourism-cyan .xtourism-link a {
+    color: #1abc9c;
+}
+
+.xtourism-blue .ui-datepicker,
+.xtourism-blue .xtourism-input-text input:focus,
+.xtourism-blue .xtourism-input-select select:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 2px #3498db;
+}
+.xtourism-blue .xtourism-button,
+.xtourism-blue .xtourism-input-switcher input:checked + label,
+.xtourism-blue .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #2980b9;
+    background: #3498db;
+}
+.xtourism-blue .xtourism-button:before {
+    background: #2980b9;
+}
+.xtourism-blue .ui-datepicker-prev,
+.xtourism-blue .ui-datepicker-next,
+.xtourism-blue .xtourism-input-checkbox label:after,
+.xtourism-blue .xtourism-input-group .active i:after,
+.xtourism-blue .xtourism-link a {
+    color: #3498db;
+}
+
+.xtourism-purple .ui-datepicker,
+.xtourism-purple .xtourism-input-text input:focus,
+.xtourism-purple .xtourism-input-select select:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 2px #9b59b6;
+}
+.xtourism-purple .xtourism-button,
+.xtourism-purple .xtourism-input-switcher input:checked + label,
+.xtourism-purple .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #8e44ad;
+    background: #9b59b6;
+}
+.xtourism-purple .xtourism-button:before {
+    background: #8e44ad;
+}
+.xtourism-purple .ui-datepicker-prev,
+.xtourism-purple .ui-datepicker-next,
+.xtourism-purple .xtourism-input-checkbox label:after,
+.xtourism-purple .xtourism-input-group .active i:after,
+.xtourism-purple .xtourism-link a {
+    color: #9b59b6;
+}
+
+.xtourism-marengo .ui-datepicker,
+.xtourism-marengo .xtourism-input-text input:focus,
+.xtourism-marengo .xtourism-input-select select:focus {
+    border-color: #2c3e50;
+    box-shadow: 0 0 2px #34495e;
+}
+.xtourism-marengo .xtourism-button,
+.xtourism-marengo .xtourism-input-switcher input:checked + label,
+.xtourism-marengo .ui-datepicker-calendar .ui-datepicker-current-day a {
+    border-color: #2c3e50;
+    background: #34495e;
+}
+.xtourism-marengo .xtourism-button:before {
+    background: #2c3e50;
+}
+.xtourism-marengo .ui-datepicker-prev,
+.xtourism-marengo .ui-datepicker-next,
+.xtourism-marengo .xtourism-input-checkbox label:after,
+.xtourism-marengo .xtourism-input-group .active i:after,
+.xtourism-marengo .xtourism-link a {
+    color: #34495e;
+}

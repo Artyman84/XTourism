@@ -1,0 +1,482 @@
+/*@import url(awesome_4.4.0/css/font-awesome.min.css);*/
+@import url(font-awesome-4.7.0/css/font-awesome.min.css);
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px !important;
+}
+
+.container.tour-info {
+    width: 960px !important;
+}
+
+.container-frontend{
+    width: 1258px !important;
+}
+
+div#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+div#footer p.text-muted{
+    margin-top: 20px;
+}
+
+.margin-bottom45 {
+    margin-bottom: 45px !important;
+}
+
+.color-danger{
+    color: #a94442 !important;
+}
+
+.form-actions {
+    padding: 19px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+}
+
+div.xtourism-checkbox input{
+    display: none;
+}
+
+div.xtourism-checkbox span {
+    cursor: pointer;
+}
+
+table.table-unbordered tbody tr td {
+    border: 0px !important;
+
+}
+
+table.table-unbordered thead tr th {
+    border: 0px !important;
+}
+
+table.table-unbordered tr th {
+    border: 0px !important;
+}
+
+table.table-unbordered tr td {
+    border: 0px !important;
+}
+
+.table-hovered > tbody > tr > td:hover,
+.table-hovered > tbody > tr > th:hover,
+.table-hovered > tbody > tr:hover > td,
+.table-hovered > tbody > tr:hover,
+.table-hovered > tbody > tr:hover > th {
+    background-color: #d9edf7 !important;
+}
+
+.table-hovered > tbody > tr > td.info,
+.table-hovered > tbody > tr > th.info,
+.table-hovered > tbody > tr.info > td,
+.table-hovered > tbody > tr > .info,
+.table-hovered > tbody > tr.info > th {
+    background-color: #d9edf7 !important;
+}
+
+.gridview-dropdown-menu{
+    left: auto !important;
+    right: -31px !important;
+}
+
+table.panel-table td {
+    vertical-align: middle !important;
+}
+
+table.panel-table thead th {
+    vertical-align: middle !important;
+}
+
+table.panel-table thead tr:first-child th {
+    padding-bottom: 20px;
+}
+
+table.table-filter thead tr:first-child th{
+    padding-bottom: 0 !important;
+}
+
+table.table-filter thead tr:last-child td{
+    padding-bottom: 20px !important;
+}
+
+table.table-filter thead tr:last-child td input{
+    border-radius: 3px;
+    padding: 2px 12px 2px 12px;
+}
+
+table.table-filter thead tr:last-child td select{
+    border-radius: 3px;
+    padding: 3px 12px 3px 12px;
+}
+
+table.panel-table thead tr th:first-child{
+    padding-left: 29px;
+}
+
+table.panel-table tbody tr td:first-child{
+    padding-left: 29px;
+}
+
+table.panel-table tbody tr th:first-child{
+    padding-left: 29px;
+}
+
+table.panel-table tbody tr td:last-child{
+    padding-right: 29px;
+}
+
+div.panel-default-pager{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: right;
+    border-top: 1px solid #ddd;
+}
+
+div.panel-summary{
+    padding-right: 30px;
+}
+
+div.panel-grid-view{
+    padding-bottom: 0 !important;
+}
+
+a.sort-link {
+    text-decoration: none;
+}
+
+.sort-link.asc:after, .sort-link.desc:after {
+    font-family: 'Glyphicons Halflings';
+    position: relative;
+    top: 3px;
+    padding-left: 3px;
+}
+.sort-link.asc:after {
+    /*content: "\e113";*/
+    /*content:"\e093";*/
+    content:"\e253";
+}
+
+.sort-link.desc:after {
+    /*content: "\e114";*/
+    /*content:"\e094";*/
+    content:"\e252";
+}
+
+span.required{
+    color: #a94442;
+}
+
+.breadcrumb span.inactive{
+    vertical-align: middle;
+}
+
+.icon-star{
+    color: darkorange;
+}
+
+.tour-info-header{
+    margin: 20px 0 20px;
+    border-bottom: 0px solid #eee;
+}
+
+.tour-info-header .glyphicon{
+    font-size: 28px;
+    top: 3px;
+}
+
+.tour-labels-container{
+    position: relative;
+}
+
+.tour-price-sm {
+    padding: 6px;
+    background-color: #fbf4c7;
+    position: absolute;
+    display: inline-block;
+    bottom: 5%;
+
+    pointer-events: none;
+
+    left: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.tour-direction{
+    padding: 6px;
+    color: white;
+    position: absolute;
+    display: inline-block;
+    pointer-events: none;
+    z-index: 1;
+
+    top: 0px;
+    left: 0px;
+
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.tour-img{
+    position: relative;
+}
+
+.tour-img:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+    z-index: 1;
+
+    background: linear-gradient(to bottom, rgba(44,42,27,0.67) 0, rgba(44,42,27,0) 100%);
+}
+
+.tour-img a {
+    display: block;
+    overflow: hidden;
+}
+
+.tour-img .thumbnail-showcase {
+    transition: all 0.3s;
+}
+
+.tour-img:hover .thumbnail-showcase {
+    -webkit-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    position: relative;
+}
+
+.tour-price {
+    padding: 9px;
+    background-color: #fbf4c7;
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    left: 0px;
+    color: #000000;
+    font-size: 21px;
+
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+div.ajax-loader{
+    background-color: rgba(238, 238, 238, 0.6);
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.font-bold{
+    font-weight: bold !important;
+}
+
+.padding-top20{
+    padding-top: 20px;
+}
+
+img.thumbnail-showcase {
+    height: 150px;
+    width: 100%;
+    display: block;
+}
+
+img.hotel-img{
+    height: 44px;
+    width: 52px;
+    cursor: pointer;
+    margin-right:3px;
+    margin-bottom:3px;
+}
+
+span.remove-tour-icon{
+    margin-top: -5px;
+    margin-left: -2px;
+    position: absolute;
+    cursor: pointer;
+}
+
+[class^="flaticon-"]:before, [class^="flaticon-"]:after {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.i-margin{
+    margin-right: 2px;
+}
+
+.product-setting-name{
+    border-bottom: 1px dashed #DDDDDD;
+    padding-top: 20px;
+}
+
+.searcher-set-bg-color-class label{
+    padding: 14px;
+    margin-bottom: 4px;
+}
+
+.searcher-set-bg-color-class .orange{
+    background-color: #D35400;
+}
+
+.searcher-set-bg-color-class .yellow{
+    background-color: #F39C12;
+}
+
+.searcher-set-bg-color-class .red{
+    background-color: #C0392B;
+}
+
+.searcher-set-bg-color-class .green{
+    background-color: #27AE60;
+}
+
+.searcher-set-bg-color-class .cyan{
+    background-color: #16A085;
+}
+
+.searcher-set-bg-color-class .blue{
+    background-color: #2980B9;
+}
+
+.searcher-set-bg-color-class .purple{
+    background-color: #8E44AD;
+}
+
+.searcher-set-bg-color-class .marengo{
+    background-color: #2C3E50;
+}
+
+
+.searcher-set-rounding label{
+    width: 30px;
+    height: 30px;
+    background: #F3F3F3;
+    border: 1px solid #CCCCCC;
+    padding: 0;
+}
+
+.searcher-set-rounding label.active span{
+    border-color: #000;
+}
+
+.searcher-set-rounding label span{
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin-top: 25%;
+    border: 1px solid #B1AFAF;
+    border-width: 3px 3px 0 0;
+    border-radius: 0 0px 0 0;
+    background: #E8E8E8;
+}
+
+.searcher-set-rounding label input{
+    display: none;
+}
+
+
+#searcher-filters-settings, #showcase-filters-settings {
+    padding: 35px;
+}
+
+#searcher-filters-settings table tr td, #showcase-filters-settings table tr td{
+    cursor: pointer;
+}
+
+#searcher-filters-settings table tr td:first-child, #showcase-filters-settings table tr td:first-child{
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+#searcher-filters-settings table tr td:last-child, #showcase-filters-settings table tr td:last-child{
+    padding-right: 0px;
+}
+
+#searcher-filters-settings .nav-tabs, #showcase-filters-settings .nav-tabs{
+    margin: 0 15px 15px 15px;
+}
+
+#searcher-filters-settings .alert, #showcase-filters-settings .alert{
+    margin: 15px 0 35px 0;
+}
+
+.hotel-credit-cards .thumbnail{
+    width: 73px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hotel-credit-cards .thumbnail:hover{
+    background-color: #d9edf7;
+}
+
+.hotel-credit-cards .thumbnail.active{
+    background-color: #d9edf7;
+}
+
+.hotel-credit-cards .thumbnail img{
+    height: 40px;
+    width: 65px;
+}
+
+.hotel-credit-cards .thumbnail div.text-center{
+    margin-bottom: -4px;
+}
+
+.img-tour-standard {
+    width: 165px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.showcase-filters p{
+    margin-right: 45px;
+    padding-top: 0;
+}
+
+.showcase-filters table td{
+    padding: 12px 12px 12px 12px;
+}
+
+.showcase-filters table td:nth-child(1){
+    width: 1%;
+}
+
+.showcase-filters table td:nth-child(2){
+    width: 12%;
+}
+
+.showcase-filters table td:nth-child(3){
+    width: 2%;
+}
+
+.showcase-filters table td a:hover, .showcase-filters table td a:focus{
+    text-decoration: none;
+}
+
+.fa-correction {
+    font-size: 16px;
+    width: 14px;
+}

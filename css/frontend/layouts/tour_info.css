@@ -1,0 +1,19 @@
+body, tbody tr td {
+    line-height: 1.6 !important;
+}
+
+div.first-row{
+    margin-top: 96px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color:#31708f !important;
+}
+
+#tour-from-where{
+    font-size: 18px;
+}
+
+table{
+    margin-bottom: 0px !important;
+}

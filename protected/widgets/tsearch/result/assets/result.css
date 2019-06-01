@@ -1,0 +1,116 @@
+.results-header{
+    margin-bottom: 20px;
+}
+
+.results-block .results-pager-alt{
+    float: left;
+}
+
+.results-block .pager-block{
+    float: right;
+}
+
+.results-block .results-pager{
+    height: 26px;
+    font-size: 11px;
+    line-height: 26px;
+    color: #808080;
+}
+
+.results-block .results-pager .active:hover, .results-block .results-pager .active{
+    border-color: #7f8c8d;
+    background: #95a5a6;
+    box-shadow: inset 0 1px rgba(255,255,255,0.25);
+    color: #fff;
+    cursor: default;
+}
+
+.results-block .results-pager a{
+    display: block;
+    float: right;
+    width: 32px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: inset 0 1px 2px #f5f5f5;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    -ms-transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+    -moz-transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+    -webkit-transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.results-block .results-pager span{
+    padding-right: 10px;
+    display: inline-block;
+    font-size: 11px;
+    color: #333;
+}
+
+.results-amount{
+    line-height: 26px;
+    color: #808080;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.results-amount span{
+    color: #000;
+}
+
+.results-amount a{
+    display: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.results-progress{
+    background-image: linear-gradient(to bottom, #95a5a6 0%, #95a5a6 100%);
+}
+
+.results-pager i {
+    display: block;
+    float: right;
+    width: 32px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.tour-result-main .table tr th{
+    font-weight: normal;
+}
+
+.tour-result-main .table tr td{
+    font-weight: bold;
+}
+
+.tour-result-main .table td span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    cursor: default;
+    color: #000;
+}
+
+.tour-result-main .table td span i{
+    font-style: normal;
+    display: block;
+    font-size: 11px;
+    color: #808080;
+    font-weight: normal;
+    text-align: center;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.results-btn {
+    background-color: #95a5a6 !important;
+    color: white !important;
+    background-image: none !important;
+}

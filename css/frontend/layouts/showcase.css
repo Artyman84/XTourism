@@ -1,0 +1,67 @@
+.showcase-main a, .showcase-main a:hover{
+    text-decoration: none;
+}
+
+.tour-showcase-properties{
+    padding: 20px 25px 7px 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.tour-showcase-properties .text-crop{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.tour-showcase-properties .row-main{
+    margin-bottom: 10px !important;
+}
+
+.tour-showcase-properties .row-main div.col-main:first-child{
+    padding-left: 4px !important;
+}
+
+.tour-showcase-properties .row-main div.col-main:last-child{
+    padding-right: 4px !important;
+}
+
+.tour-showcase-properties .row-main .tour-stars{
+    display: inline-block !important;
+}
+
+.tour-showcase-properties .row-main a{
+    font-weight: bold;
+}
+
+.tour-showcase-properties .row-property{
+    font-size: 12px !important;
+}
+
+.tour-showcase-properties .row-property div.col-property:first-child{
+    padding-left: 4px !important;
+}
+
+.tour-showcase-properties .row-property div.col-property:last-child{
+    padding-left: 0 !important;
+    padding-right: 4px !important;
+}
+
+div.load-showcase-tours{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+div.load-showcase-tours button {
+    background-image: none;
+    text-shadow: none;
+    position: relative;
+    top: -18px;
+}
+
+img.thumbnail-showcase{
+    width: 100% !important;
+    height: 145px !important;
+}

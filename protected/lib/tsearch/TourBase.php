@@ -1,0 +1,1 @@
+<?php/** * Created by PhpStorm. * User: Arty * Date: 03.09.2017 * Time: 9:00 */namespace TSearch;abstract class TourBase {}

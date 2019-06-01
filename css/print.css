@@ -1,0 +1,32 @@
+.navbar, .breadcrumb, .form-actions, #footer, .close, .modal-footer, .nav-pills, .tab-content, .panel, .alert{
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-sm-4 {
+    width: 33.33333333%;
+}
+
+.col-sm-3 {
+    width: 25%;
+}
+
+.col-sm-3, .col-sm-4 {
+    float: left;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-muted {
+    color: #777;
+}
